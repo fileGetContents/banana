@@ -13,13 +13,24 @@ class HotelModel extends Model
 
 
     /**
-     * 添加数据房间diang
-     * @param $order
+     * 添加数据房间订单
+     * @param $hotel array
      * @return mixed
      */
     public function insertOrder($hotel)
     {
         return DB::table($this->orderTable)->insert($hotel);
+    }
+
+
+    /**
+     * 添加房间
+     * @param  $insert array
+     * @return mixed
+     */
+    public function insertRoom($insert)
+    {
+        return DB::table($this->roomTable)->insert($insert);
     }
 
     /**
@@ -71,5 +82,6 @@ class HotelModel extends Model
     {
         return DB::table($this->orderTable)->select('order_num')->where($where)->get();
     }
+
 
 }

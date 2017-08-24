@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="lib/html5.js"></script>
@@ -21,17 +20,15 @@
     <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js"></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
-    <title>建材列表</title>
+    <title>房间管理</title>
 </head>
 <body class="pos-r">
 <div>
     <div class="pd-20">
-        <div class="cl pd-5 bg-1 bk-gray mt-20"><span class="l"><a href="javascript:;" onclick="datadel()"
-                                                                   class="btn btn-danger radius"><i
-                            class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius"
-                                                                          onclick="product_add('添加产品','product-add')"
-                                                                          href="javascript:;"><i class="Hui-iconfont">
-                        &#xe600;</i> 添加产品</a></span> <span class="r">共有数据：<strong>54</strong> 条</span></div>
+        <div class="cl pd-5 bg-1 bk-gray mt-20"><span class="l">
+                <a class="btn btn-primary radius" onclick="product_add('添加产品','product-category-add')" href="javascript:;">
+                    <i class="Hui-iconfont">&#xe600;</i> 添加房间</a>
+            </span></div>
         <div class="mt-20">
             <table class="table table-border table-bordered table-bg table-hover table-sort">
                 <thead>

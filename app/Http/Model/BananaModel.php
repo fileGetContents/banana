@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-
 class BananaModel extends Model
 {
     protected $table = "travel";
@@ -21,11 +20,7 @@ class BananaModel extends Model
      */
     public function getIndexRecommend($tag)
     {
-        $return = DB::table($this->table)
-            ->where(array('travel_tag' => 20, 'travel_recommend' => $tag))
-            ->limit(4)
-            ->orderBy("travel_sort", 'ASC')
-            ->get();
+        $return = DB::table($this->table)->where(array('travel_tag' => 20, 'travel_recommend' => $tag))->limit(4)->orderBy("travel_sort", 'ASC')->get();
         return $return;
     }
 
@@ -37,13 +32,7 @@ class BananaModel extends Model
      */
     public function getLikeAddress($like, $skip = 0)
     {
-        return DB::table($this->table)
-            ->where('travel_tag', "=", 20)
-            ->where('travel_name', "like", "%" . $like . "%")
-            ->orderBy("travel_sort", "asc")
-            ->skip($skip)
-            ->take(5)
-            ->get();
+        return DB::table($this->table)->where('travel_tag', "=", 20)->where('travel_name', "like", "%" . $like . "%")->orderBy("travel_sort", "asc")->skip($skip)->take(5)->get();
     }
 
     /**
@@ -63,13 +52,7 @@ class BananaModel extends Model
      */
     public function selectTravelList($travel_classify, $skip = 0)
     {
-        return DB::table($this->table)
-            ->where("travel_classify", "=", $travel_classify)
-            ->where('travel_tag', '=', 20)
-            ->orderBy('travel_sort', 'ASC')
-            ->take(5)
-            ->skip($skip)
-            ->get();
+        return DB::table($this->table)->where("travel_classify", "=", $travel_classify)->where('travel_tag', '=', 20)->orderBy('travel_sort', 'ASC')->take(5)->skip($skip)->get();
     }
 
 
@@ -103,5 +86,24 @@ class BananaModel extends Model
         return DB::table($this->travelOrder)->insert($insert);
     }
 
+    /**
+     * 添加旅游项目
+     * @param $insert array insert
+     * @return mixed
+     */
+    public function insertTravel($insert)
+    {
+        return DB::table($this->table)->insertGetId($insert);
+    }
+
+    /**
+     * 添加旅游时间信息
+     * @param $insert
+     * @return mixed
+     */
+    public function insertTravelInfo($insert)
+    {
+        return DB::table($this->travelInfo)->insertGetId($insert);
+    }
 
 }
