@@ -1,0 +1,67 @@
+<ion-view view-title="下单">
+    <ion-content class="stable-bg"  overflow-scroll="false">
+    
+         <div class="message light-bg">
+            <p>温泉酒店别墅屋</p> 
+            <p><span>2017/07/26入住2017/07/27离店 1晚</span></p>
+         
+        </div>
+        
+        	<p class="explaintit" style="margin-top: 10px;">填写信息</p>
+        
+          <div class="card">
+             <form name="hotelForm" novalidate>
+             	     	 <label class="item  item-input">
+                     <span class="input-label">房间数</span>
+                     <select>
+                     	<option>1间</option>
+                     	<option>2间</option>
+                     	<option>3间</option>
+                     </select>
+                 </label>
+             	 <label class="item  item-input">
+                     <span class="input-label">入住人</span>
+                     <input type="text" placeholder="联系人姓名" name="person" required ng-minlength="1" ng-model="user.person">
+                 </label>
+             	
+                 <label class="item  item-input">
+                     <span class="input-label">手机号</span>
+                     <input type="number" placeholder="联系人手机号" name="number" required ng-minlength="11" ng-maxlength="11"ng-model="user.number">
+                 </label>
+ 
+                     <label class="item item-input">
+                     <span class="input-label">备注</span>
+                     <input type="text" placeholder="选填，您对房间的特殊要求" name="beizhu">
+                 </label>
+                   <label class="item item-input">
+                     <span class="input-label">总价</span>
+                    <span class="mycolor"> ￥1080元</span>
+                 </label>
+              
+            </form>  
+        
+         </div>
+    
+              <p class="usererr " ng-show="hotelForm.person.$dirty && hotelForm.person.$invalid">请输入姓名</p>
+            <p class="usererr" ng-show="hotelForm.number.$dirty && hotelForm.number.$invalid">请输入正确的手机号</p>
+        	<p class="explaintit">下单说明</p>
+   		<p class="explain">提交订单并成功支付后，商户将尽快确认是否接单，若商户拒单，支付款项及资金将原路返还至您的账户，到账时间以各支付渠道退款处理时间为准</p>
+            
+        <p class="explaintit">退款政策</p>
+   		<p class="explain" style="margin-bottom: 50px;">如果您需要退改订单，请至少提前7天，七天前课免费退改，7天内不在退改，尽请谅解</p>
+          
+        
+      
+      </ion-content>
+      <button class=" order_foot2 " ui-sref="frame.payorder2" ng-disabled="hotelForm.$invalid">
+	
+	<div class="tijiao light">
+		
+		提交
+
+	</div>
+	 <div  class="btnprice light">￥1100</div> 
+
+</button>
+     </ion-view>
+       

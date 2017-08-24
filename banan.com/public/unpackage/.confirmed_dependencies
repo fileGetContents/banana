@@ -1,0 +1,44 @@
+{
+  "index.html": {
+    "resources": [
+      "img/lunbo2.jpeg",
+      "css/index.css",
+      "css/bootstrap.css",
+      "js/jquery.min.js",
+      "img/lunbo1.jpg",
+      "model.html",
+      "js/bootstrap.min.js",
+      "img/lunbo3.jpeg",
+      "css/ionic-v1.3.3/css/ionic.css",
+      "css/ionic-v1.3.3/fonts/ionicons.ttf",
+      "css/ionic-v1.3.3/js/ionic.bundle.js",
+      "img/lunbo1.jpeg"
+    ],
+    "refer": [
+      "model.html"
+    ]
+  },
+  "model.html": {
+    "resources": [
+      "templates/register.html",
+      "js/main.js",
+      "css/index.css",
+      "js/app.js",
+      "templates/all.html",
+      "css/ionic-v1.3.3/css/ionic.css",
+      "templates/details.html",
+      "templates/login.html",
+      "css/ionic-v1.3.3/js/ionic.bundle.js",
+      "css/viewer.css",
+      "js/index.js",
+      "js/viewer.js",
+      "templates/payorder2.html",
+      "templates/pay.html",
+      "templates/payorder.html",
+      "dhtmlgoodies_calendar/dhtmlgoodies_calendar.js",
+      "templates/pay2.html",
+      "dhtmlgoodies_calendar/dhtmlgoodies_calendar.css",
+      "js/jquery.min.js"
+    ]
+  }
+}

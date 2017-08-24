@@ -1,0 +1,89 @@
+<ion-view view-title="填写预订信息">
+    <ion-content class="stable-bg"  ng-controller="xuzhiCtrl">
+    
+<div class="message light-bg">
+            <p>【2017年 旅游快进 】亲子游巴拉巴拉 建行卡号地块骄傲好滴好滴继续</p>
+            <div><span>[情而不色]艺术是青涩的开始</span></div>
+        </div>
+        <div class="chosendate">出行日期:2017-08-25(周五)</div>
+         <div class="chuxin">出行人数</div>
+
+   <div class="chosentype light-bg">
+   	    <div class="catecenter">
+                <div class="peopletype mycolor">成人</div>
+                    <em id="min2" onclick="minus2();">-</em>
+                    <input type="number" id="text_box2"  class="num" value="1" />
+                    <em id="add2" onclick="add2();">+</em>
+                </div>
+                
+                
+                 <div class="catecenter">
+                <div class="peopletype mycolor">儿童</div>
+                    <em id="min3" onclick="minus3();">-</em>
+                    <input type="number" id="text_box3"  class="num" value="1" />
+                    <em id="add3" onclick="add3();">+</em>
+                </div>
+                
+   </div>
+   
+   	  <div class="chuxin">联系人信息</div>   
+   	  <form name="messageForm" novalidate>
+   	  	<label class="item item-input">
+                     <span class="input-label">姓名*</span>
+                     <input type="text" placeholder="必填" name="pername" required ng-maxlength="30" ng-minlength="1" ng-model="user.pername">
+                 </label>
+                 <label class="item  item-input">
+                     <span class="input-label">手机号*</span>
+                     <input type="number" placeholder="必填,用于接收订单信息" name="tel" required ng-minlength="11" ng-maxlength="11" ng-model="user.tel" id="tel">
+                 </label>
+      
+            </form>
+           <p class="usererr" ng-show="messageForm.pername.$dirty && messageForm.pername.$invalid">请输入姓名</p>
+            <p class="usererr " ng-show="messageForm.tel.$dirty && messageForm.tel.$invalid">请输入正确的手机号</p>
+       	  <div class="chuxin">备注</div>
+       	  <div class="beizhubox light-bg">
+       	  <textarea class="beizhu"></textarea>
+     </div>
+     <div class="xuzhi"><input type="checkbox" checked="checked"><span>我已阅读并同意了 <span class="mycolor"ng-click="modal6.show()">预订须知和合同范本</span></span></div>
+</ion-content>
+
+ <div class="foot">
+	
+	<div class="totalprice mycolor light-bg">
+		
+		总额：￥3200
+	
+	
+	</div>
+	 <div class="buy_button3 light"  id="sendbtn2">提交订单</div> 
+
+</div>
+  
+
+        <script id="templates/xuzhi.html" type="text/ng-template">
+      <ion-modal-view class="light-bg" style="height: 80%;width: 90%;margin:50px 5% 0 5%">
+               <ion-content class="padding">
+          
+       <ion-scroll  zooming="true" direction="y" style="width:100%; height:400px;"> 
+       	香蕉旅行网的线路大多数是商业化不浓，贴近原生态的。所以部分硬件设施不足。请带好一颗旅行者的新，宽容面对旅行中的一切，放下一切负担参与到每次开怀大笑中吧。
+       	因交通阻塞，罢工天气飞机故障，航班取消祸根改时间等不可抗因素所致的额外费用，由乘客承担，果果因为不可抗力导致活动取消，费用将会在3-5个工作日退还到相应账户；
+       	成功报名付款后，如果退出请在香蕉旅行app订单详情页申请退款，客服处理更快，可随时查看进度，或者发送短信“姓名+活动+退出人数+退出原因”退出成功后已收到回复短信为准，
+       	请谅解!(注：杭州活动发送到1738297392729)周边游活动报名付款后，如不能参加，按照下列标准想旅行社支付业务损失费用：出发前3日及以上，支付旅游费用总额1%；出发德里克司法解释雷锋 的看剧复合大师咖啡壶
+       	货到付款就是看菊花发的看
+       	jhdsfks 淡粉色ifU盾和快递费对的地方大口径。备注旅游费用值优惠前价格函数的将发丝
+       	地方健身房的看剧发货的哭声健康的恢复可适当快递费健康
+       金卡戴珊放得快快递费经典款
+       反对党看风景
+       放得开句电力局的看剧可染发剂看得见空格符合看得见高低DFS
+       少近点好是恐惧数控技术的看剧
+       dsfjlsf打飞机代理费
+        的分v打开
+        dfvkd分低V；发动机的积分的艰苦奋斗看剧空间大富科技是看得见反倒是叫你呢的看剧烦死了
+        </ion-scroll>
+          
+        </ion-content> 
+        <button class="xuzhiclose" ng-click="modal6.hide()">关闭</button>
+      </ion-modal-view>
+    </script>
+</ion-view>
+       

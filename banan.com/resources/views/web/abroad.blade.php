@@ -1,0 +1,75 @@
+<ion-view view-title="出境">
+    <ion-content overflow-scroll="false">
+        <div class="header">
+
+            <select>
+                <option value="">出发地</option>
+                <option value="">北京</option>
+                <option value="">上海</option>
+                <option value="">四川</option>
+                <option value="">新疆</option>
+
+            </select>
+
+            <div class="find3"><input type="text" name="" id="" value="" placeholder="世界那么大，你想去哪儿"/><img
+                        src="img/find.png"></div>
+        </div>
+
+        <ion-slide-box auto-play="true" does-continue="true" slide-interval="2000">
+            <ion-slide>
+                <div class="box3 blue"><img src="img/find.jpg"></div>
+
+            </ion-slide>
+            <ion-slide>
+                <div class="box3 blue"><img src="img/post1.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box3 blue"><img src="img/5.jpg"></div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="title2"><p>- - 精选路线 - -</p></div>
+
+        <ul class="list">
+            <li class="item item-thumbnail-left" ui-sref="frame.activedetails">
+                <img src="">
+                <p>北京-香港4天3晚自由行</p>
+                <p class="list-price"><span class="RMB">RMB </span><span class="bigprice">1479</span><span
+                            class="qi">起 </span></p>
+
+            </li>
+            <li class="item item-thumbnail-left" ui-sref="frame.activedetails">
+                <img src="">
+                <p>北京-香港4天3晚自由行</p>
+                <p class="list-price"><span class="RMB">RMB </span><span class="bigprice">1479</span><span
+                            class="qi">起 </span></p>
+
+            </li>
+            <li class="item item-thumbnail-left">
+                <img src="">
+                <p>北京-香港4天3晚自由行</p>
+                <p class="list-price"><span class="RMB">RMB </span><span class="bigprice">1479</span><span
+                            class="qi">起 </span></p>
+
+            </li>
+
+            <li class="item item-thumbnail-left">
+                <img src="">
+                <p>北京-香港4天3晚自由行</p>
+                <p class="list-price"><span class="RMB">RMB </span><span class="bigprice">1479</span><span
+                            class="qi">起 </span></p>
+            </li>
+            <li class="item item-thumbnail-left">
+                <img src="">
+                <p>北京-香港4天3晚自由行</p>
+                <p class="list-price"><span class="RMB">RMB </span><span class="bigprice">1479</span><span
+                            class="qi">起 </span></p>
+
+            </li>
+        </ul>
+
+
+
+    </ion-content>
+
+</ion-view>
+

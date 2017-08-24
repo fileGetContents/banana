@@ -1,0 +1,139 @@
+#calendarDiv{
+	position:absolute;
+     width:270px;
+	border:1px solid #317082;
+	padding:1px;
+	background-color: #FFF;
+	font-family:arial;
+	font-size:14px;
+	padding-bottom:20px;
+	visibility:hidden;
+	margin-top: -300px;
+	margin-left: -20px;
+}
+#calendarDiv span,#calendarDiv img{
+	float:left;
+}
+#calendarDiv .selectBox,#calendarDiv .selectBoxOver{
+	
+	/*line-height:12px;*/
+	padding:1px;
+	cursor:pointer;
+	padding-left:8px;
+}
+
+#calendarDiv .selectBoxTime,#calendarDiv .selectBoxTimeOver{	
+	line-height:12px;
+	padding:1px;
+	cursor:pointer;
+	padding-left:2px;
+}
+
+#calendarDiv td{
+	padding:3px;
+	margin:0px;
+	font-size:10px;
+}
+
+
+
+#calendarDiv .selectBox{
+	border:1px solid #E2EBED;		
+	
+	position:relative;
+}
+#calendarDiv .selectBoxOver{
+	border:1px solid #E2EBED;
+	background-color:#FFFCF5 ;
+
+	position:relative;
+}
+#calendarDiv .selectBoxTime{
+	border:1px solid #317082;		
+	color: #317082;
+	position:relative;
+}
+#calendarDiv .selectBoxTimeOver{
+	border:1px solid #216072;	
+	color: #216072;
+	position:relative;
+}
+
+#calendarDiv .topBar{
+	height:20px;
+	padding:2px;
+	
+
+}
+#calendarDiv .activeDay{	/* Active day in the calendar */
+	color:#FF0000;
+}
+#calendarDiv .todaysDate{
+	height:17px;
+	line-height:17px;
+	padding:2px;
+	background:rgba(240,240,240,1);
+	text-align:center;
+	position:absolute;
+	bottom:0px;
+	width:98%;
+}
+#calendarDiv .todaysDate div{
+	float:left;
+}
+	
+#calendarDiv .timeBar{
+	height:17px;
+	line-height:17px;
+	background-color: #E2EBED;
+	width:72px;
+	color:#FFF;
+	position:absolute;
+	right:0px;
+}
+
+#calendarDiv .timeBar div{
+	float:left;
+	margin-right:1px;
+}
+
+
+#calendarDiv .monthYearPicker{
+	background-color:#FFFFFF;
+	border:1px solid #AAAAAA;
+	position:absolute;
+	color: #6D6D6D;
+	left:0px;
+	top:15px;
+	z-index:1000;
+	display:none;
+  width: 65px;
+	text-align: center;
+
+}
+#calendarDiv #monthSelect{
+	width:75px;
+}
+#calendarDiv .monthYearPicker div{
+	float:none;
+	clear:both;	
+	padding:1px;
+	margin:1px;	
+
+	cursor:pointer;
+}
+
+
+#calendarDiv td{
+	text-align:center;
+	cursor:pointer;
+}
+
+#calendarDiv .topBar img{
+	cursor:pointer;
+}
+#calendarDiv .topBar div{
+	margin-left: 3px;
+	float:left;
+	margin-right:6px;
+}
